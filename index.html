@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffd7ea" />
+  <meta name="description" content="A bright, playful forgiveness message." />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="forgive-question-hd.webp" fetchpriority="high" />
+  <title>Do You Forgive Me? 💗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="aurora aurora-a" aria-hidden="true"></div>
+  <div class="aurora aurora-b" aria-hidden="true"></div>
+  <div class="aurora aurora-c" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="sparkle-field" id="sparkleField" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <section class="forgive-stage" aria-live="polite">
+      <div class="glass-panel" id="glassPanel">
+        <div class="top-badge"><span class="badge-dot"></span> A little question for you</div>
+
+        <div id="questionView" class="view active">
+          <div class="halo halo-pink"></div>
+          <div class="art-frame question-art">
+            <img
+              id="questionImage"
+              src="forgive-question-hd.webp"
+              alt="Cute illustrated friends hugging"
+              width="1350"
+              height="1350"
+              fetchpriority="high"
+              decoding="async"
+            />
+            <div class="image-gloss" aria-hidden="true"></div>
+          </div>
+
+          <div class="eyebrow">I have something to ask…</div>
+          <h1>Do you forgive me?</h1>
+          <p class="subtext">I promise I mean it. 🥺💗</p>
+
+          <div class="button-wrap" id="buttonWrap">
+            <button id="yesBtn" class="action-btn yes-btn" type="button">Yes, I forgive you <span>💗</span></button>
+            <button id="noBtn" class="action-btn no-btn" type="button">No</button>
+          </div>
+          <p class="hint">You can try catching the “No” button… 😈</p>
+        </div>
+
+        <div id="loadingView" class="view loading-view" hidden>
+          <div class="orbital-heart" aria-hidden="true">
+            <div class="heart">♥</div>
+            <span class="orbit orbit-1"></span>
+            <span class="orbit orbit-2"></span>
+            <span class="spark s1">✦</span>
+            <span class="spark s2">✦</span>
+          </div>
+          <p class="loading-title">Checking your forgiveness…</p>
+          <p class="loading-sub">This is very important information. 💌</p>
+          <div class="loading-track"><span></span></div>
+        </div>
+
+        <div id="resultView" class="view result-view" hidden>
+          <div class="halo halo-gold"></div>
+          <div class="art-frame result-art">
+            <img
+              src="forgive-result-hd.webp"
+              alt="Cute illustrated hug"
+              width="1464"
+              height="1242"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="image-gloss" aria-hidden="true"></div>
+          </div>
+
+          <div class="eyebrow success-eyebrow">Okay… I can breathe again 🥹</div>
+          <h2>Thank you for forgiving me! 💗</h2>
+          <p class="subtext">You just made my whole day brighter.</p>
+
+          <button id="resetBtn" class="reset-btn" type="button">One more hug <span>🤍</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
